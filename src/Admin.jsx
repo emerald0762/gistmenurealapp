@@ -14,7 +14,7 @@ export default function Admin() {
   const [items, setItems] = useState('')
 
   const handleSubmit = async () => {
-    const response = await fetch('http://gistmenuapp-production.up.railway.app/api/menu', {
+    const response = await fetch('https://gistmenuapp-production.up.railway.app/api/menu', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
