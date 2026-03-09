@@ -35,7 +35,7 @@ body {
   align-items: center;
 }
 
-/* 4. 버튼 기본 스타일 (MUI를 안 쓰는 일반 버튼용) */
+
 button {
   border-radius: 8px;
   cursor: pointer;

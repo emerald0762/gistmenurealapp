@@ -13,7 +13,7 @@ export default function Restaurant2Lunch() {
   const todayDisplay = new Date(). toLocaleDateString('ko-KR', { month: 'numeric', day: 'numeric', weekday: 'short'})
  
   useEffect(() => {
-    fetch(`http://gistmenuapp-production.up.railway.app/api/menu?date=${todayDB}&restaurant=2식당`)
+    fetch(`https://gistmenuapp-production.up.railway.app/api/menu?date=${todayDB}&restaurant=2식당`)
       .then(res => res.json())
       .then(data => setMenu(data['점심'] || []))
   }, [todayDB])

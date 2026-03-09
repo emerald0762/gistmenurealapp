@@ -9,13 +9,18 @@ import { useNavigate } from 'react-router-dom'
 export default function Restaurant1Breakfast() {
   const navigate = useNavigate()
   const [menu, setMenu] = useState([])
-  const todayDB = new Date().toISOString().split('T')[0]
+  const today = new Date()
+  const todayDB = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`
   const todayDisplay = new Date(). toLocaleDateString('ko-KR', { month: 'numeric', day: 'numeric', weekday: 'short'})
 
   useEffect(() => {
-    fetch(`http://gistmenuapp-production.up.railway.app/api/menu?date=${todayDB}&restaurant=1식당`)
+    fetch(`https://gistmenuapp-production.up.railway.app/api/menu?date=${todayDB}&restaurant=1식당`)
       .then(res => res.json())
-      .then(data => setMenu(data['아침'] || []))
+      .then(data => {
+       console.log('data:', data)
+       console.log('아침:', data['아침'])
+       setMenu(data['아침'] || [])
+       })
   }, [todayDB])
 
   return (
