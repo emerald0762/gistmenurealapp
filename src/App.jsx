@@ -7,7 +7,7 @@ import Restaurant1lunch from './pages/Restaurant1lunch.jsx'
 import Restaurant1dinner from './pages/Restaurant1dinner.jsx'
 import Restaurant2lunch from './pages/Restaurant2lunch.jsx'
 import Restaurant2dinner from './pages/Restaurant2dinner.jsx'
-import Admin from './Admin'
+import Admin from './Admin.jsx'
 
 
 
