@@ -19,25 +19,24 @@ export default function Restaurant2Breakfast() {
   }, [todayDB])
 
   return (
-    <Stack direction="row" spacing={20} sx={{ justifyContent: "space-evenly", alignItems: "center" }}>
-      <Typography variant="h6" sx={{ color: '#ffffff' }}>1111111</Typography>
 
       <Stack spacing={1} alignItems="center">
-        <Typography variant="h3" sx={{ color: '#000000' }}>{todayDisplay} 아침</Typography>
+        <Typography variant="h4" sx={{ color: '#000000' }}>{todayDisplay} 아침</Typography>
         {menu.length > 0 ? (
           menu.map((item, index) => (
-            <Typography key={index} variant="h6" sx={{ color: '#000000' }}>{item}</Typography>
+            <Typography key={index} variant="h5" sx={{ color: '#000000' }}>{item}</Typography>
           ))
         ) : (
-          <Typography variant="h6" sx={{ color: '#000000' }}>메뉴 없음</Typography>
+          <Typography variant="h5" sx={{ color: '#000000' }}>메뉴 없음</Typography>
         )}
         <Typography variant="h6" sx={{ color: '#ffffff' }}>1</Typography>
+        
+        <Button variant="text" onClick={() => navigate('/restaurant2lunch')} sx={{ color: '#000000'}}>점심</Button>
         <IconButton onClick={() => navigate('/')} size="large">
           <HomeIcon fontSize='inherit' />
         </IconButton>
       </Stack>
 
-      <Button variant="text" onClick={() => navigate('/restaurant2lunch')} sx={{ color: '#000000', fontSize: '3rem' }}>점심</Button>
-    </Stack>
+  
   )
 }

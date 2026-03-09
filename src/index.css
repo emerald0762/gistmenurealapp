@@ -3,25 +3,40 @@
   src: url("./fonts/Paperlogy-8ExtraBold.ttf") format("truetype");
 }
 
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   font-family: "Paperlogy-8ExtraBold";
   margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
   background-color: #ffffff;
   color: rgba(255, 255, 255, 0.87);
-  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+/* 4. 버튼 기본 스타일 (MUI를 안 쓰는 일반 버튼용) */
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
 }

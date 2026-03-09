@@ -8,6 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 const theme = createTheme({
   typography: {
     fontFamily: 'Paperlogy-8ExtraBold',
+    button: {fontSize: '5vw'}
   },
 })
 
