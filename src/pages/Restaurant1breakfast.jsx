@@ -42,8 +42,10 @@ export default function Restaurant1Breakfast() {
           <Typography variant="h5" sx={{ color: '#000000' }}>메뉴 없음</Typography>
         )}
         <Typography variant="subtitle1" sx={{ color: '#ffffff' }}>1</Typography>
-       
-        <Button variant="text" onClick={() => navigate('/restaurant1lunch')} sx={{ color: '#000000'}}endIcon={<ArrowForwardIosIcon />}>점심</Button>
+        <Stack direction="row" sx={{alignItems: "center"}}>
+         <Button variant="text" sx={{color: '#ffffff'}}startIcon={<ArrowBackIosIcon />}>아침</Button>
+         <Button variant="text" onClick={() => navigate('/restaurant1lunch')} sx={{color: '#000000'}}endIcon={<ArrowForwardIosIcon/>}>점심</Button>
+        </Stack>
         <IconButton onClick={() => navigate('/')} size="large"><HomeIcon fontSize='inherit' />
         </IconButton>
       </Stack>

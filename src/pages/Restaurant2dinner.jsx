@@ -35,7 +35,10 @@ export default function Restaurant2Dinner() {
           <Typography variant="h5" sx={{ color: '#000000' }}>메뉴 없음</Typography>
         )}
        <Typography variant="subtitle1" sx={{color:'#ffffff'}}>1</Typography>
-       <Button variant="text" onClick={() => navigate('/restaurant2lunch')} sx={{color: '#000000'}}startIcon={<ArrowBackIosIcon />}>점심</Button>
+       <Stack direction="row" sx={{alignItems: "center"}}>
+         <Button variant="text" onClick={() => navigate('/restaurant2lunch')} sx={{color: '#000000'}}startIcon={<ArrowBackIosIcon />}>점심</Button>
+         <Button variant="text" sx={{color: '#ffffff'}}endIcon={<ArrowForwardIosIcon/>}>점심</Button>
+       </Stack>
 
        <IconButton onClick={() => navigate('/')} size="large"> <HomeIcon fontSize='inherit' /> </IconButton>
       </Stack>
