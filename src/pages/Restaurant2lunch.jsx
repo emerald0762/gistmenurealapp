@@ -22,6 +22,9 @@ export default function Restaurant2Lunch() {
   return (
      <Stack spacing={1} direction="column" sx={{alignItems: "center"}}>
         <Typography variant="h4" sx={{ color: '#000000' }}>{todayDisplay} 점심</Typography>
+        <Typography variant="h5" sx={{ color: '#ffffff', marginBottom: '40px', textAlign: 'center' }}>
+        1
+        </Typography>
          {menu.length > 0 ? (
            menu.map((item, index) => (
              <Typography key={index} variant="h5" sx={{ color: '#000000' }}>{item}</Typography>
