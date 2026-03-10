@@ -23,6 +23,13 @@ export default function BasicButtons() {
           sx={{ width: '35vw', maxWidth: '200px', height: '18vw', maxHeight: '114px'}}>
           제2학생회관
         </Button>
+        <Typography variant="h4" sx={{ color: '#ffffff', marginBottom: '40px', textAlign: 'center' }}>
+        11111
+      </Typography>
+       <Typography variant="h4" sx={{ color: '#ffffff', marginBottom: '40px', textAlign: 'center' }}>
+        11111
+      </Typography>
+
       </Stack>
     </Stack>
   )
