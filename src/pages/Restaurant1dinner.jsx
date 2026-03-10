@@ -5,6 +5,8 @@ import { useNavigate } from 'react-router-dom'
 import Typography from '@mui/material/Typography'
 import HomeIcon from '@mui/icons-material/HomeRounded'
 import IconButton from '@mui/material/IconButton'
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 
 export default function Restaurant1Dinner() {
   const navigate = useNavigate()
@@ -33,7 +35,7 @@ export default function Restaurant1Dinner() {
           <Typography variant="h5" sx={{ color: '#000000' }}>메뉴 없음</Typography>
         )}
        <Typography variant="subtitle1" sx={{color:'#ffffff'}}>1</Typography>
-       <Button variant="text" onClick={() => navigate('/restaurant1lunch')} sx={{color: '#000000'}}>⬅ 점심</Button>
+       <Button variant="text" onClick={() => navigate('/restaurant1lunch')} sx={{color: '#000000'}}startIcon={<ArrowBackIosIcon />}>점심</Button>
        <IconButton onClick={() => navigate('/')} size="large"> <HomeIcon fontSize='inherit' /> </IconButton>
 
       </Stack>
