@@ -22,7 +22,7 @@ export default function Restaurant1Lunch() {
   return (
      <Stack spacing={1} direction="column" sx={{alignItems: "center"}}>
         <Typography variant="h4" sx={{ color: '#000000' }}>{todayDisplay} 점심</Typography>
-        <Typography variant="h5" sx={{ color: '#ffffff', marginBottom: '40px', textAlign: 'center' }}>
+        <Typography variant="subtitle1" sx={{ color: '#ffffff'}}>
         1
         </Typography>
          {menu.length > 0 ? (
@@ -32,10 +32,10 @@ export default function Restaurant1Lunch() {
         ) : (
           <Typography variant="h5" sx={{ color: '#000000' }}>메뉴 없음</Typography>
         )}
-       <Typography variant="h6" sx={{color:'#ffffff'}}>1</Typography>
+       <Typography variant="subtitle1" sx={{color:'#ffffff'}}>1</Typography>
        <Stack direction="row" sx={{alignItems: "center"}}>
-         <Button variant="text" onClick={() => navigate('/restaurant1breakfast')} sx={{color: '#000000'}}>아침</Button>
-         <Button variant="text" onClick={() => navigate('/restaurant1dinner')} sx={{color: '#000000'}}>저녁</Button>
+         <Button variant="text" onClick={() => navigate('/restaurant1breakfast')} sx={{color: '#000000'}}>⬅ 아침</Button>
+         <Button variant="text" onClick={() => navigate('/restaurant1dinner')} sx={{color: '#000000'}}>저녁 ⮕</Button>
        </Stack>
        <IconButton onClick={() => navigate('/')} size="large"> <HomeIcon fontSize='inherit' /> </IconButton>
      </Stack>

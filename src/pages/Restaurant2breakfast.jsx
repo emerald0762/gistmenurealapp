@@ -23,7 +23,7 @@ export default function Restaurant2Breakfast() {
 
       <Stack spacing={1} alignItems="center">
         <Typography variant="h4" sx={{ color: '#000000' }}>{todayDisplay} 아침</Typography>
-        <Typography variant="h5" sx={{ color: '#ffffff', marginBottom: '40px', textAlign: 'center' }}>
+        <Typography variant="subtitle1" sx={{ color: '#ffffff'}}>
         1
         </Typography>
         {menu.length > 0 ? (
@@ -33,9 +33,9 @@ export default function Restaurant2Breakfast() {
         ) : (
           <Typography variant="h5" sx={{ color: '#000000' }}>메뉴 없음</Typography>
         )}
-        <Typography variant="h6" sx={{ color: '#ffffff' }}>1</Typography>
+        <Typography variant="subtitle1" sx={{ color: '#ffffff' }}>1</Typography>
         
-        <Button variant="text" onClick={() => navigate('/restaurant2lunch')} sx={{ color: '#000000'}}>점심</Button>
+        <Button variant="text" onClick={() => navigate('/restaurant2lunch')} sx={{ color: '#000000'}}>점심 ⮕</Button>
         <IconButton onClick={() => navigate('/')} size="large">
           <HomeIcon fontSize='inherit' />
         </IconButton>

@@ -41,7 +41,7 @@ export default function Restaurant1Breakfast() {
         )}
         <Typography variant="subtitle1" sx={{ color: '#ffffff' }}>1</Typography>
        
-        <Button variant="text" onClick={() => navigate('/restaurant1lunch')} sx={{ color: '#000000', fontsize: '1.5rem !important'}}>점심</Button>
+        <Button variant="text" onClick={() => navigate('/restaurant1lunch')} sx={{ color: '#000000', fontsize: '1.5rem !important'}}>점심 ⮕</Button>
         <IconButton onClick={() => navigate('/')} size="large"><HomeIcon fontSize='inherit' />
         </IconButton>
       </Stack>
