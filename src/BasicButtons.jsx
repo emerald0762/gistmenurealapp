@@ -27,6 +27,9 @@ export default function BasicButtons() {
       <Typography variant="h5" sx={{ color: '#ffffff', marginBottom: '40px', textAlign: 'center' }}>
         1
       </Typography>
+      <Typography variant="h5" sx={{ color: '#ffffff', marginBottom: '40px', textAlign: 'center' }}>
+        1
+      </Typography>
 
     </Stack>
   )
