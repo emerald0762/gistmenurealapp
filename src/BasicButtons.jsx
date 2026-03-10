@@ -27,8 +27,8 @@ export default function BasicButtons() {
       <Typography variant="h5" sx={{ color: '#ffffff', marginBottom: '40px', textAlign: 'center' }}>
         1
       </Typography>
-      <Typography variant="h5" sx={{ color: '#ffffff', marginBottom: '40px', textAlign: 'center' }}>
-        1
+      <Typography variant="caption" sx={{ color: '#ffffff', marginBottom: '40px', textAlign: 'center' }}>
+        원산지 및 알레르기에 대한 정보는 GIST 사이트에서 확인바랍니다
       </Typography>
 
     </Stack>
